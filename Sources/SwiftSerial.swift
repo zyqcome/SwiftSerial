@@ -218,6 +218,14 @@ public class SerialPort {
     var path: String
     var fileDescriptor: Int32?
 
+    public init() {
+        self.path = ""
+    }
+    
+    public func setPath(_ path: String) {
+        self.path = path
+    }
+
     public init(path: String) {
         self.path = path
     }
